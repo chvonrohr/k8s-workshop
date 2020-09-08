@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-09-08T12:44:12Z"
+  name: nginx
+  namespace: default
+  resourceVersion: "74715"
+  selfLink: /api/v1/namespaces/default/services/nginx
+  uid: 832fbb3c-b261-4125-905e-b7f7c031ab5d
+spec:
+  clusterIP: 10.116.5.42
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: nginx
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
