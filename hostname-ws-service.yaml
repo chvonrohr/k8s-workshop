@@ -19,6 +19,6 @@ spec:
   selector:
     app: simpleapp
   sessionAffinity: None
-  type: ClusterIP
+  type: NodePort
 status:
   loadBalancer: {}
